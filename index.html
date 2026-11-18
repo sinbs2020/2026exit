@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>비상구(EXIT) 제42회 정기공연 팜플렛</title>
+<style>
+  html,body{margin:0;background:#050808;color:#cfe3e6;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+  header{padding:18px 16px 10px;text-align:center}
+  header h1{font-size:17px;margin:0 0 4px;font-weight:600;letter-spacing:.02em}
+  header p{font-size:13px;margin:0;opacity:.7}
+  main{max-width:720px;margin:0 auto;padding:0 8px 40px}
+  figure{margin:0 0 10px}
+  img{width:100%;height:auto;display:block;border-radius:4px;background:#111}
+  footer{text-align:center;font-size:12px;opacity:.5;padding:10px 0 30px}
+</style>
+</head>
+<body>
+<header>
+  <h1>The Groupsound Exit · 42nd Regular Performance</h1>
+  <p>2026.11.20 (금) 오후 7시 · 익산 All that music</p>
+</header>
+<main id="pages"></main>
+<footer>원광대학교 중앙동아리 밴드 비상구</footer>
+<script>
+  var m=document.getElementById('pages');
+  for(var i=1;i<=18;i++){
+    var n=(i<10?'0':'')+i;
+    var f=document.createElement('figure');
+    var im=document.createElement('img');
+    im.src='img/'+n+'.jpg';
+    im.alt='팜플렛 '+i+'쪽';
+    im.loading=i<=2?'eager':'lazy';
+    im.width=1340; im.height=1901;
+    f.appendChild(im); m.appendChild(f);
+  }
+</script>
+</body>
+</html>
